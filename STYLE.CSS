@@ -1,0 +1,148 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:0px 100px 0px 100px ;
+}
+.hero{
+    display: flex;
+    justify-content: space-around;
+    /* padding:0px 100px 0px 100px ; */
+    padding-top: 5rem;
+}
+.lhero{
+    width:20% ;
+}
+.lhero h1{
+    width: 531px;
+    height: 231px;
+    font-weight: 500;
+    font-size: 60px;
+     line-height: 76.56px;
+} 
+.lhero p{
+    width:498px;
+    height: 112px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+.hero .lhero button{
+    top: 60px;
+    gap: 70px;
+    color: white;
+    background-color: #0c0303;
+    border: 1PX solid;
+    border-color: black;
+    border-radius: 15px;
+    HEIGHT:4.2rem ;
+    width:13rem ;
+}
+
+.lheader img {
+     filter: brightness(0);
+}
+.header .rheader button{
+    top: 60px;
+    gap: 70px;
+    
+    border: 1PX solid;
+    border-color: black;
+    border-radius: 15px;
+    HEIGHT:4.2rem ;
+    width:13rem ;
+}
+.lheader img{
+    fill: black;
+    width: 20rem;
+}
+body{
+    /* background-color: black; */
+}
+/* Style the navigation bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    /* background-color: #333; dark gray background */
+    color: #fff; /* white text */
+  }
+  
+  /* Style the navigation links */
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 3rem;
+    display: flex;
+    /* color: black; */
+    font-family: space ;
+  }
+  
+  .nav li {
+    margin-right: 20px;
+
+    
+  }
+  
+  .nav a {
+    /* color: #fff; */
+    text-decoration: none;
+    transition: color 0.2s ease;
+    color: black;
+    font-family: ;
+    
+  }
+  
+  .nav a:hover {
+    /* color: #ccc; light gray on hover */
+  }
+  
+  /* Style the navigation toggle button */
+  .nav-toggle {
+    display:none; /* hide toggle button by default */
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background-color: rgba(3, 0, 0, 0.572);
+  }
+  
+  .nav-toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #0c0303;
+    margin-bottom: 5px;
+    transition: transform 0.2s ease;
+  }
+  
+  .nav-toggle span:first-child {
+    transform: translateY(-5px);
+  }
+  
+  .nav-toggle span:last-child {
+    transform: translateY(5px);
+  }
+  
+  /* Show toggle button on small screens */
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: block;
+    }
+    .nav ul {
+      display: none;
+    }
+    .nav-toggle.active span {
+      background-color: #333;
+    }
+    .nav-toggle.active span:first-child {
+      transform: translateY(0);
+    }
+    .nav-toggle.active span:last-child {
+      transform: translateY(0);
+    }
+    .nav.active ul {
+      display: block;
+    }
+  }
